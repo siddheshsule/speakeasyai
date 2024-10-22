@@ -11,6 +11,7 @@ interface Plan {
     price: string;
     items: string[];
     paymentLink: string,
+    priceId: string,
 }
 
 const PricingCard = ({plan}:{plan:Plan}) => {

@@ -5,6 +5,7 @@ import Header from "@/components/home/header";
 import {
   ClerkProvider,
 } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
           >
             <Header />
             <main>{children}</main>
+            <Toaster />
           </body>
         </html>
     </ClerkProvider>
